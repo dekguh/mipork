@@ -1,0 +1,17 @@
+@for $i from 1 through 10 {
+    .margin-top-#{$i * 4} {
+        margin-top: #{$i * 4}px;
+    }
+
+    .margin-bottom-#{$i * 4} {
+        margin-bottom: #{$i * 4}px;
+    }
+
+    .padding-top-#{$i * 4} {
+        padding-top: #{$i * 4}px;
+    }
+
+    .padding-bottom-#{$i * 4} {
+        padding-bottom: #{$i * 4}px;
+    }
+}

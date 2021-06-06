@@ -1,0 +1,59 @@
+html {
+    font-size: $size-body !important;
+    color: $color-body !important;
+    font-family: $font-roboto !important;
+    background-color: $color-gray-primary;
+}
+
+%heading-set {
+    font-family: $font-heading;
+    line-height: $heading-line-height;
+    color: $color-heading;
+    margin-bottom: 12px;
+}
+
+h1 {
+    font-size: $size-h1;
+    @extend %heading-set;
+}
+
+h2 {
+    font-size: $size-h2;
+    @extend %heading-set;
+}
+
+h3 {
+    font-size: $size-h3;
+    @extend %heading-set;
+}
+
+h4 {
+    font-size: $size-h4;
+    @extend %heading-set;
+}
+
+h5 {
+    font-size: $size-h5;
+    @extend %heading-set;
+}
+
+h6 {
+    font-size: $size-h6;
+    @extend %heading-set;
+}
+
+p {
+    margin-bottom: 16px;
+    line-height: $body-line-height;
+}
+
+a {
+    text-decoration: none;
+    color: $color-red-primary;
+    transition: .4s;
+
+    &:hover {
+        color: $color-red-secondary;
+        text-decoration: none;
+    }
+}

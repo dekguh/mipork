@@ -1,0 +1,16 @@
+$color-red-primary: #fd7664;
+$color-red-secondary: #fd8e7f;
+
+$color-black-primary: #2c2c2c;
+$color-black-secondary: #4d4d4d;
+
+$color-gray-primary: #F9F9F9;
+$color-gray-secondary: #d8d8d8;
+
+$color-heading: $color-black-primary;
+$color-body: $color-black-secondary;
+
+@mixin bg-color-gradient {
+    background-color: $color-red-primary;
+    background-image: linear-gradient(90deg, $color-red-primary 0%, $color-red-secondary 74%);
+}
