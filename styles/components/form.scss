@@ -1,0 +1,29 @@
+.form__control-input {
+    display: block;
+    padding: 12px 16px;
+    border: 1px solid $color-gray-secondary;
+    color: $color-gray-optional;
+    width: 100%;
+    border-radius: 4px;
+
+    &::placeholder {
+        color: $color-gray-secondary;
+    }
+}
+
+.form__label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.form__group-icon-wrap {
+    position: relative;
+
+    .form__group-icon {
+        position: absolute;
+        top: 50%;
+        left: 12px;
+        transform: translateY(-50%);
+        color: $color-red-primary;
+    }
+}
