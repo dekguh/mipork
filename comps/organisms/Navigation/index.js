@@ -1,4 +1,4 @@
-import NavList from "../molecules/navigation/NavList"
+import NavList from "../../molecules/navigation/NavList"
 
 const Navigation = () => {
     return (
