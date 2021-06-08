@@ -3,7 +3,7 @@ const Price = ({ price, discount }) => {
         <div className='card__menubox-price-wrap'>
             <span className='card__menubox-price'>
                 {!discount && Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR' }).format(price)}
-                {discount && Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR' }).format(price)}
+                {discount && Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR' }).format(price - ((discount/100) * price))}
             </span>
             {discount && <span className='card__menubox-discounted'>
                 {Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR' }).format(price)}
