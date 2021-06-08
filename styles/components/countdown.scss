@@ -1,0 +1,26 @@
+.countdown__list {
+    display: flex;
+    flex-flow: row nowrap;
+
+    li {
+        position: relative;
+        background-color: $color-red-primary;
+        color: #FFFFFF;
+        height: 24px;
+        width: 24px;
+        margin-right: 8px;
+        border-radius: 2px;
+        font-size: 10px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        .countdown__list-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}

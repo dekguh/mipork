@@ -1,0 +1,13 @@
+.title__section {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+
+    .title__section-left {
+        flex: 1 1 auto;
+    }
+
+    .title__section-right {
+        flex: 0 1 auto;
+    }
+}

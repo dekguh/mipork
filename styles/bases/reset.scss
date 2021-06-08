@@ -5,6 +5,10 @@ html {
     background-color: $color-gray-primary;
 }
 
+body {
+    line-height: 1.5;
+}
+
 %heading-set {
     font-family: $font-heading;
     line-height: $heading-line-height;
