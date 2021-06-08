@@ -2,11 +2,11 @@ html {
     font-size: $size-body !important;
     color: $color-body !important;
     font-family: $font-roboto !important;
-    background-color: $color-gray-primary;
 }
 
 body {
     line-height: 1.5;
+    background-color: #FFFFFF;
 }
 
 %heading-set {
@@ -70,6 +70,8 @@ button {
 }
 
 input, textarea {
+    box-shadow: none;
+
     &:focus {
         outline: none;
     }
