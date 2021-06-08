@@ -1,8 +1,17 @@
-const Title = ({ component: Component, classes, text, ...rest }) => {
+import Link from 'next/link';
+
+const Title = ({ component: Component, classes, text, href, classesLink, ...rest }) => {
     return (
+    <>
         <Component className={classes ? `title__custom ${classes}` : 'title__custom'} {...rest}>
-            {text}
+            {!href && text}
+            {href && <Link href={href}>
+                <a className={classesLink}>
+                    {text}
+                </a>
+            </Link>}
         </Component>
+    </>
     )
 }
 
