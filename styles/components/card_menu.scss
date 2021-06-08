@@ -1,4 +1,8 @@
 .card__menubox {
+    background-color: #FFFFFF;
+    box-shadow: 0 0 8px rgba($color: #000000, $alpha: .08);
+    border-radius: 4px;
+
     .card__menubox-heading {
         position: relative;
 
@@ -21,6 +25,21 @@
             height: 100px;
             object-fit: cover;
             border-radius: 4px;
+        }
+    }
+
+    .card__menubox-body {
+        padding: 8px 12px 12px 12px;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+
+        .card__menubox-body-left {
+            flex: 1 1 auto;
+        }
+
+        .card__menubox-body-right {
+            flex: 0 1 auto;
         }
     }
 
