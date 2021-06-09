@@ -55,6 +55,7 @@
     font-size: 10px;
     margin-left: 4px;
     color: $color-red-primary;
+    display: inline-block;
 
     &::after {
         content: '';
