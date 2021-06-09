@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import CategoryListSection from '../comps/organisms/CategoryListSection';
 import FlashDealSection from '../comps/organisms/FlashDealSection';
 import FormSearch from '../comps/organisms/FormSearch';
 import Navigation from '../comps/organisms/Navigation';
@@ -10,6 +11,7 @@ export default function Home() {
       <div className='container'>
         <FormSearch />
         <FlashDealSection totalShow={2} dataMenu={JsonDataMenu} classes='margin-top-20' />
+        <CategoryListSection classes='margin-top-20' />
       </div>
       <Navigation />
     </div>

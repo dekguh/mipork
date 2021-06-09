@@ -1,0 +1,21 @@
+.category__list {
+    display: flex;
+    flex-flow: row nowrap;
+
+    .category__list-item {
+        flex: 1 1 auto;
+    }
+}
+
+.category__item {
+    padding: 15px;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    text-align: center;
+    box-shadow: 0 0 8px rgba($color: #000000, $alpha: .07);
+
+    .category__item-image {
+        height: 25px;
+        margin-bottom: 8px;
+    }
+}
