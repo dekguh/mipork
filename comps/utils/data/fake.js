@@ -27,7 +27,7 @@ export const JsonDataMenu = [
         price: 30000,
         discount: 0,
         bestseller: true,
-        imageUrl: '/images/food/hamburger-beef-vegetable.jpg',
+        imageUrl: '/images/food/hamburger-wijen.jpg',
         published_at: ''
     }
 ];
