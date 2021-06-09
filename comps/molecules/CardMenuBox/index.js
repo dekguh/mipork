@@ -3,7 +3,7 @@ import LabelCustom from '../../atomics/LabelCustom'
 import Title from '../../atomics/Title';
 import Button from '../../atomics/form/Button';
 
-const CardMenuBox = ({ classes, link, onClickCart, title, price, discount, bestseller, image  }) => {
+const CardMenuBox = ({ classes, link, onClickCart, id, title, price, discount, bestseller, image  }) => {
     return (
         <div className={classes ? `card__menubox ${classes}` : 'card__menubox'}>
             <div className='card__menubox-heading'>
