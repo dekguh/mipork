@@ -36,10 +36,12 @@
 
         .card__menubox-body-left {
             flex: 1 1 auto;
+            text-align: left;
         }
 
         .card__menubox-body-right {
             flex: 0 1 auto;
+            text-align: right;
         }
     }
 

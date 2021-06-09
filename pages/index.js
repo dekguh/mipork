@@ -1,26 +1,15 @@
 import Head from 'next/head';
-import CounterDown from '../comps/atomics/CounterDown';
-import CardMenuBox from '../comps/molecules/CardMenuBox';
-import TitleSection from '../comps/molecules/TitleSection';
+import FlashDealSection from '../comps/organisms/FlashDealSection';
 import FormSearch from '../comps/organisms/FormSearch';
 import Navigation from '../comps/organisms/Navigation';
+import { JsonDataMenu } from '../comps/utils/data/fake';
 
 export default function Home() {
   return (
     <div>
       <div className='container'>
         <FormSearch />
-        <TitleSection classes='margin-top-16 margin-bottom-12' title='Flash Deal'>
-          <CounterDown timestamp={1623640142000} />
-        </TitleSection>
-        <CardMenuBox
-          image='/images/food/hamburger-cheese.jpg'
-          price={15000}
-          discount={20}
-          bestseller={true}
-          title='Hamburger Cheese'
-          link='#'
-        />
+        <FlashDealSection totalShow={2} dataMenu={JsonDataMenu} classes='margin-top-20' />
       </div>
       <Navigation />
     </div>
