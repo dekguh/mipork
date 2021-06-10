@@ -5,7 +5,7 @@ const NavList = () => {
     return (
         <>
             <ul className='navigation__nav'>
-                <NavLink link='#'>
+                <NavLink link='/'>
                     <div className='navigation__nav-icon'>
                         <HouseDoor size={28} />
                     </div>
@@ -17,7 +17,7 @@ const NavList = () => {
                     </div>
                 </NavLink>
 
-                <NavLink link='#'>
+                <NavLink link='/cart'>
                     <div className='navigation__nav-icon'>
                         <div className='navigation__nav-cart'>
                             <Cart size={28} />
