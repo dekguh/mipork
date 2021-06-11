@@ -1,7 +1,8 @@
 import { Cart, HouseDoor, Search, Wallet } from 'react-bootstrap-icons';
+import { connect } from 'react-redux';
 import NavLink from '../../atomics/navigation/NavLink';
 
-const NavList = () => {
+const NavList = ({ dataCart }) => {
     return (
         <>
             <ul className='navigation__nav'>
@@ -24,7 +25,7 @@ const NavList = () => {
                             <div className='cart__number-circle'>
                                 <div className='cart__number-content'>
                                     <span className='cart__number-text'>
-                                        2
+                                        {dataCart.length >= 1 ? dataCart.length : 0}
                                     </span>
                                 </div>
                             </div>
@@ -42,4 +43,10 @@ const NavList = () => {
     )
 }
 
-export default NavList
+const mapStateToProps = state => {
+    return {
+        dataCart: state.cart.dataCart
+    }
+}
+
+export default connect(mapStateToProps, null)(NavList)
