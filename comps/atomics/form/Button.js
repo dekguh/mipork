@@ -1,6 +1,6 @@
 const Button = ({ classes, type, text, ...rest }) => {
     return (
-        <button className={classes ? `button` : 'button'} type={type} {...rest}>
+        <button className={classes ? `button ${classes}` : 'button'} type={type} {...rest}>
             {text}
         </button>
     )
