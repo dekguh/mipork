@@ -1,10 +1,12 @@
 import { useState, useEffect } from 'react';
+import { connect } from 'react-redux';
 import { Carousel } from 'react-responsive-carousel';
 import CounterDown from '../../atomics/CounterDown';
 import CardMenuBox from '../../molecules/CardMenuBox';
 import TitleSection from '../../molecules/TitleSection';
+import { addToCartAct } from '../../utils/reducers/CartAction';
 
-const FlashDealSection = ({ classes, dataMenu, totalShow }) => {
+const FlashDealSection = ({ classes, dataMenu, totalShow, dispatchAddCart }) => {
     const [dataFlashDeal, setDataFlashDeal] = useState([]);
 
     useEffect(() => {
@@ -36,6 +38,7 @@ const FlashDealSection = ({ classes, dataMenu, totalShow }) => {
                         bestseller={data.bestseller}
                         title={data.name}
                         link='#'
+                        onClickCart={e => dispatchAddCart(data)}
                     />
                 </div>
             ))}
@@ -44,4 +47,10 @@ const FlashDealSection = ({ classes, dataMenu, totalShow }) => {
     )
 }
 
-export default FlashDealSection
+const mapDispatchToProps = dispatch => {
+    return {
+        dispatchAddCart: data => dispatch(addToCartAct(data))
+    }
+}
+
+export default connect(null, mapDispatchToProps)(FlashDealSection)

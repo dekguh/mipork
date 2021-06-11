@@ -1,8 +1,10 @@
 import { useState, useEffect } from 'react';
+import { connect } from 'react-redux';
 import CardMenuList from '../../molecules/CardMenuList';
 import TitleSection from '../../molecules/TitleSection';
+import { addToCartAct } from '../../utils/reducers/CartAction';
 
-const LatestMenuSection = ({ classes, dataMenu, totalShow }) => {
+const LatestMenuSection = ({ classes, dataMenu, totalShow, dispatchAddCart }) => {
     const [dataLatestMenu, setDataLatestMenu] = useState([]);
 
     useEffect(() => {
@@ -25,10 +27,17 @@ const LatestMenuSection = ({ classes, dataMenu, totalShow }) => {
                     title={data.name}
                     link='#'
                     classes={'margin-bottom-8'}
+                    onClickCart={e => dispatchAddCart(data)}
                 />
             ))}
         </div>
     )
 }
 
-export default LatestMenuSection
+const mapDispatchToProps = dispatch => {
+    return {
+        dispatchAddCart: data => dispatch(addToCartAct(data))
+    }
+}
+
+export default connect(null, mapDispatchToProps)(LatestMenuSection)
