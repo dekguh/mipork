@@ -32,7 +32,7 @@ const NotifSection = () => {
                 </div>
             </BlockMessage>}
             {dataNotif.length > 0 && dataNotif.map((data, i) => (
-                <CardNotif text={data.description} date={data.date} classes='margin-top-8' />
+                <CardNotif key={i} text={data.description} date={data.published_at} classes='margin-top-8' />
             ))}
         </div>
     )
