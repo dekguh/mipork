@@ -59,3 +59,25 @@ export const JsonDataNotif = [
         published_at: '25-05-2021'
     }
 ]
+
+export const JsonDataTransaction = [
+    {
+        id: 1,
+        status: 'dibayar',
+        total: 38000,
+        menuId: [1, 2],
+        published_at: '25-05-2021'
+    },{
+        id: 2,
+        status: 'dibayar',
+        total: 49000,
+        menuId: [1, 2],
+        published_at: '26-05-2021'
+    },{
+        id: 3,
+        status: 'dibayar',
+        total: 18000,
+        menuId: [1],
+        published_at: '29-05-2021'
+    }
+]
