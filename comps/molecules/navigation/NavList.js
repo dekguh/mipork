@@ -33,7 +33,7 @@ const NavList = ({ dataCart }) => {
                     </div>
                 </NavLink>
 
-                <NavLink link='#'>
+                <NavLink link='/transaction'>
                     <div className='navigation__nav-icon'>
                         <Wallet size={28} />
                     </div>

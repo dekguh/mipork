@@ -1,6 +1,6 @@
 import { Bell } from "react-bootstrap-icons"
 
-const CardNotif = ({ classes, text }) => {
+const CardNotif = ({ classes, text, date }) => {
     return (
         <div className={ classes ? `card__notif ${classes}` : 'card__notif'}>
             <div className='card__notif-icon'>
@@ -12,7 +12,7 @@ const CardNotif = ({ classes, text }) => {
                 <p className='card__notif-description'>
                     {text}
                 </p>
-                <span className='card__notif-date'>25-05-2021</span>
+                <span className='card__notif-date'>{date}</span>
             </div>
         </div>
     )
