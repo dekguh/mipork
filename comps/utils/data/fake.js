@@ -47,3 +47,15 @@ export const JsonDataCategory = [
         name: 'snack'
     }
 ]
+
+export const JsonDataNotif = [
+    {
+        id: 1,
+        description: 'anda berhasil melakukan pembayaran untuk pesanan #123',
+        published_at: '25-05-2021'
+    },{
+        id: 2,
+        description: 'selamat anda mendapatkan promo gratis ongkir',
+        published_at: '25-05-2021'
+    }
+]
