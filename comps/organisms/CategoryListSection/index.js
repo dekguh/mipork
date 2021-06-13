@@ -10,7 +10,7 @@ const CategoryListSection = ({ classes }) => {
                 <div className='category__list-item' style={{ paddingRight: '8px', width: '33.33%' }}>
                     <CategoryItem
                         link='#'
-                        title='food'
+                        title='makanan'
                         icon='/images/icon_category/food.png'
                     />
                 </div>
@@ -18,7 +18,7 @@ const CategoryListSection = ({ classes }) => {
                 <div className='category__list-item' style={{ paddingRight: '8px', paddingLeft: '8px', width: '33.33%' }}>
                     <CategoryItem
                         link='#'
-                        title='drink'
+                        title='minuman'
                         icon='/images/icon_category/drink.png'
                     />
                 </div>

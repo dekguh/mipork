@@ -1,4 +1,4 @@
-import { Cart, HouseDoor, Search, Wallet } from 'react-bootstrap-icons';
+import { Cart, HouseDoor, List, Wallet } from 'react-bootstrap-icons';
 import { connect } from 'react-redux';
 import NavLink from '../../atomics/navigation/NavLink';
 
@@ -12,9 +12,9 @@ const NavList = ({ dataCart }) => {
                     </div>
                 </NavLink>
 
-                <NavLink link='#'>
+                <NavLink link='/menu'>
                     <div className='navigation__nav-icon'>
-                        <Search size={28} />
+                        <List size={28} />
                     </div>
                 </NavLink>
 
