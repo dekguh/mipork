@@ -29,6 +29,26 @@ export const JsonDataMenu = [
         bestseller: true,
         imageUrl: '/images/food/hamburger-wijen.jpg',
         published_at: ''
+    },{
+        id: 4,
+        name: 'Coffee Latte',
+        typeMenu: 'drink',
+        description: '',
+        price: 10000,
+        discount: 0,
+        bestseller: true,
+        imageUrl: '/images/drink/coffee-latte.jpg',
+        published_at: ''
+    },{
+        id: 4,
+        name: 'Cesar De La Cruz',
+        typeMenu: 'snack',
+        description: '',
+        price: 30000,
+        discount: 0,
+        bestseller: true,
+        imageUrl: '/images/snack/cesar-de-la-cruz.jpg',
+        published_at: ''
     }
 ];
 
