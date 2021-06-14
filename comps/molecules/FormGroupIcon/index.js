@@ -1,7 +1,7 @@
 import FormGroup from "../../atomics/form/FormGroup";
 import Input from "../../atomics/form/Input";
 
-const FormGroupIcon = ({ icon: Icon, label, classesForm, classesInput, onChange, placeholder }) => {
+const FormGroupIcon = ({ icon: Icon, label, classesForm, classesInput, onChange, placeholder, ...rest }) => {
     return (
         <FormGroup labelText={label} classes={classesForm}>
             <div className='form__group-icon-wrap'>
@@ -13,6 +13,7 @@ const FormGroupIcon = ({ icon: Icon, label, classesForm, classesInput, onChange,
                     style={{ paddingLeft: '35px' }}
                     onChange={onChange}
                     placeholder={placeholder}
+                    {...rest}
                 />
             </div>
         </FormGroup>
