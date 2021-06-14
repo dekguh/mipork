@@ -56,15 +56,18 @@ export const JsonDataCategory = [
     {
         id: 1,
         logo: '/images/icon_category/food.jpg',
-        name: 'food'
+        name: 'food',
+        title: 'Makanan'
     },{
         id: 2,
         logo: '/images/icon_category/drink.jpg',
-        name: 'drink'
+        name: 'drink',
+        title: 'Minuman'
     },{
         id: 3,
         logo: '/images/icon_category/snack.jpg',
-        name: 'snack'
+        name: 'snack',
+        title: 'Jajanan'
     }
 ]
 

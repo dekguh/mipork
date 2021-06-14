@@ -5,7 +5,7 @@ import { JsonDataMenu } from '../../utils/data/fake';
 import { addToCartAct } from '../../utils/reducers/CartAction';
 import CardMenuList from '../../molecules/CardMenuList';
 
-const CategoryMenuListSection = ({ classes, titleSection, typeMenu, dispatchAddCart }) => {
+const CategoryMenuListSection = ({ classes, titleSection, typeMenu, dispatchAddCart, dataMenu }) => {
     const [dataCategory, setDataCategory] = useState([]);
 
     useEffect(() => {
@@ -18,7 +18,20 @@ const CategoryMenuListSection = ({ classes, titleSection, typeMenu, dispatchAddC
             <TitleSection classes='margin-bottom-12' title={titleSection}></TitleSection>
 
             <div className='category__menu-list'>
-                {dataCategory.length > 0 && dataCategory.map((data, i) => (
+                {(!dataMenu && dataCategory.length > 0) && dataCategory.map((data, i) => (
+                    <CardMenuList
+                        key={i}
+                        image={data.imageUrl}
+                        price={data.price}
+                        discount={data.discount}
+                        bestseller={data.bestseller}
+                        title={data.name}
+                        link='#'
+                        classes={'margin-bottom-8'}
+                        onClickCart={e => dispatchAddCart(data)}
+                    />
+                ))}
+                {dataMenu && dataMenu.map((data, i) => (
                     <CardMenuList
                         key={i}
                         image={data.imageUrl}

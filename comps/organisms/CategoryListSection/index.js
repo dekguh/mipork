@@ -9,7 +9,7 @@ const CategoryListSection = ({ classes }) => {
             <div className='category__list'>
                 <div className='category__list-item' style={{ paddingRight: '8px', width: '33.33%' }}>
                     <CategoryItem
-                        link='#'
+                        link='/menu/food'
                         title='makanan'
                         icon='/images/icon_category/food.png'
                     />
@@ -17,7 +17,7 @@ const CategoryListSection = ({ classes }) => {
 
                 <div className='category__list-item' style={{ paddingRight: '8px', paddingLeft: '8px', width: '33.33%' }}>
                     <CategoryItem
-                        link='#'
+                        link='/menu/drink'
                         title='minuman'
                         icon='/images/icon_category/drink.png'
                     />
@@ -25,7 +25,7 @@ const CategoryListSection = ({ classes }) => {
 
                 <div className='category__list-item' style={{ paddingLeft: '8px', width: '33.33%' }}>
                     <CategoryItem
-                        link='#'
+                        link='/menu/snack'
                         title='snack'
                         icon='/images/icon_category/snack.png'
                     />
