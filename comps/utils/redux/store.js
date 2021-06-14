@@ -1,6 +1,7 @@
 import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 import cartReducers from '../reducers/CartReducers';
 import { createWrapper } from 'next-redux-wrapper';
+import Searchreducers from '../reducers/SearchReducers';
 
 const middleware = [];
 
@@ -12,7 +13,8 @@ const composeEnhancers =
 const enchancer = composeEnhancers(applyMiddleware(...middleware));
 
 const combineAll = combineReducers({
-    cart: cartReducers
+    cart: cartReducers,
+    search: Searchreducers
 });
 
 const makeStore = () => createStore(combineAll, enchancer);
