@@ -1,10 +1,13 @@
-import { useRouter } from 'next/router';
-import { useEffect, useState } from 'react';
 import CategoryMenuListSection from '../../../comps/organisms/CategoryMenuListSection'
 import { JsonDataCategory, JsonDataMenu } from '../../../comps/utils/data/fake';
+import Head from 'next/head';
 
 const CategoryPage = ({ dataMenu, titleCat }) => {
     return (
+    <>
+        <Head>
+            <title>Mipork - Kategori</title>
+        </Head>
         <div className='container margin-bottom-80'>
             {<CategoryMenuListSection
                 titleSection={titleCat}
@@ -12,6 +15,7 @@ const CategoryPage = ({ dataMenu, titleCat }) => {
                 dataMenu={dataMenu}
             />}
         </div>
+    </>
     )
 }
 
